@@ -8,6 +8,7 @@ import { DetailsComponent } from './details/details.component';
 import { FormsModule } from '@angular/forms';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { LoginComponent } from './login/login.component';
+import { TaskListForComponent } from './task-list-for/task-list-for.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LoginComponent } from './login/login.component';
     ButtonComponent,
     DetailsComponent,
     EventBindingComponent,
-    LoginComponent
+    LoginComponent,
+    TaskListForComponent
   ],
   imports: [
     BrowserModule,
