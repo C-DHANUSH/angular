@@ -1,0 +1,12 @@
+<p>login works!</p>
+<button (click)="toggleLogin()">
+  {{ isLoggedIn ? 'Logout' : 'Login' }}
+</button>
+<div *ngIf="isLoggedIn">
+  <h2>Welcome back!</h2>
+  <div class="profile-card">
+    <p><strong>Name:</strong> Dhanush</p>
+    <p><strong>Age:</strong> 21</p>
+    <p><strong>Designation:</strong> System Administrator</p>
+  </div>
+</div>

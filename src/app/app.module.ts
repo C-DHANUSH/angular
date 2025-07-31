@@ -7,13 +7,15 @@ import { ButtonComponent } from './button/button.component';
 import { DetailsComponent } from './details/details.component';
 import { FormsModule } from '@angular/forms';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
     DetailsComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
