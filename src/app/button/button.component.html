@@ -1,0 +1,7 @@
+<button (click)="ButtonDisabled = !ButtonDisabled">Enable Button</button>
+<button [disabled]="ButtonDisabled">Click Me</button>
+<br><br>
+<img src="{{ imageUrl }}" alt="Sample Image" />
+<br><br>
+<input [(ngModel)]="userInput" placeholder="Type something..." />
+<p>You typed: {{ userInput }}</p>
