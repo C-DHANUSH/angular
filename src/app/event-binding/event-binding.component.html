@@ -1,0 +1,22 @@
+<h2>Counter: {{ counter }}</h2>
+
+<button (click)="incrementCounter()">Increment</button>
+<button (click)="resetCounter()">Reset</button>
+
+<hr />
+
+<div 
+  (mouseover)="onMouseOver()" 
+  style="padding: 10px; background-color: lightgray; margin: 10px 0;">
+  Hover your mouse here
+</div>
+
+<input 
+  (keyup)="onKeyUp()" 
+  (focus)="onFocus()" 
+  (input)="onInput($event)" 
+  placeholder="Type something..." />
+
+<p>{{ message }}</p>
+<p>You typed: {{ inputText }}</p>
+

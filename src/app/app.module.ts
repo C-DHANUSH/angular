@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ButtonComponent } from './button/button.component';
 import { DetailsComponent } from './details/details.component';
 import { FormsModule } from '@angular/forms';
+import { EventBindingComponent } from './event-binding/event-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
-    DetailsComponent
+    DetailsComponent,
+    EventBindingComponent
   ],
   imports: [
     BrowserModule,
