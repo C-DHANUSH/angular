@@ -1,0 +1,17 @@
+<h2>Select Role:</h2>
+
+<!-- <button (click)="setRole('Admin')">Admin</button>
+<button (click)="setRole('Editor')">Editor</button>
+<button (click)="setRole('Viewer')">Viewer</button> -->
+
+<select [(ngModel)]="selectedRole">
+  <option value="">-- Choose a Role --</option>
+  <option *ngFor="let role of roles" [value]="role">{{ role }}</option>
+</select>
+
+<div [ngSwitch]="selectedRole">
+  <p *ngSwitchCase="'Admin'"> Welcome Admin</p>
+  <p *ngSwitchCase="'Editor'"> You can edit content</p>
+  <p *ngSwitchCase="'Viewer'">Read-only access</p>
+  <p *ngSwitchDefault>Please select a role</p>
+</div>

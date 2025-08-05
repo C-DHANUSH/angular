@@ -1,0 +1,14 @@
+<h2>Student List</h2>
+<ul>
+  <li *ngFor="let student of students">
+    {{ student.name }} 
+    <button (click)="selectStudent(student)">View Details</button>
+  </li>
+</ul>
+
+<hr />
+
+<app-student-details-child [student]="selectedStudent" (markFavorite)="onMarkedFavorite($event)"></app-student-details-child>
+
+<p *ngIf="favoriteStudent"> Favorite Student: {{ favoriteStudent }}</p>
+

@@ -1,0 +1,12 @@
+<div *ngIf="student">
+  <h3>Student Details</h3>
+  <p>Name: {{ student.name }}</p>
+  <p>Age: {{ student.age }}</p>
+
+  <button (click)="markAsFavorite()">Mark as Favorite</button>
+</div>
+
+<div *ngIf="!student">
+  <p>Select a student to see details</p>
+</div>
+
