@@ -1,0 +1,52 @@
+<form #studentForm="ngForm" (ngSubmit)="onSubmit(studentForm)">
+  <label>Name:</label>
+  <input type="text" name="name" [(ngModel)]="student.name" required />
+  <span *ngIf="studentForm.submitted && !studentForm.controls['name']?.valid" style="color:red">
+    Name is required
+  </span>
+  <br /><br />
+  <label>Email:</label>
+  <input type="email" name="email" [(ngModel)]="student.email" required email />
+  <span *ngIf="studentForm.submitted && !studentForm.controls['email']?.valid" style="color:red">
+    Valid email required
+  </span>
+  <br /><br />
+  <label>Age:</label>
+  <input type="number" name="age" [(ngModel)]="student.age" required min="18" />
+  <span *ngIf="studentForm.submitted && !studentForm.controls['age']?.valid" style="color:red">
+    Age must be 18 or above
+  </span>
+  <br /><br />
+  <label>Gender:</label>
+  <label><input type="radio" name="gender" [(ngModel)]="student.gender" value="Male" required /> Male</label>
+  <label><input type="radio" name="gender" [(ngModel)]="student.gender" value="Female" /> Female</label>
+  <span *ngIf="studentForm.submitted && !studentForm.controls['gender']?.valid" style="color:red">
+    Gender is required
+  </span>
+  <br /><br />
+  <label>Course:</label>
+  <select name="course" [(ngModel)]="student.course" required>
+    <option value="">-- Select Course --</option>
+    <option value="BCA">BCA</option>
+    <option value="B.Sc CS">B.Sc CS</option>
+    <option value="B.Tech IT">B.Tech IT</option>
+  </select>
+  <span *ngIf="studentForm.submitted && !studentForm.controls['course']?.valid" style="color:red">
+    Course is required
+  </span>
+  <br /><br />
+  <label>
+    <input type="checkbox" name="agree" [(ngModel)]="student.agree" required />
+    I agree to terms
+  </label>
+  <span *ngIf="studentForm.submitted && !studentForm.controls['agree']?.valid" style="color:red">
+    You must agree
+  </span>
+  <br /><br />
+  <button type="submit">Register</button>
+</form>
+<div *ngIf="submitted">
+  <h3 style="color:green">Registration Successful!</h3>
+  <pre>{{ student | json }}</pre>
+</div>
+

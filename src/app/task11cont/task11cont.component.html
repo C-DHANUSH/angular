@@ -1,0 +1,6 @@
+<div *ngIf="isLoggedIn; else loggedOut">
+  <h3>Welcome, authenticated user!</h3>
+</div>
+<ng-template #loggedOut>
+  <h3>Please log in to access the content.</h3>
+</ng-template>

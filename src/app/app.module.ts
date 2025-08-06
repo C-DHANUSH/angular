@@ -15,7 +15,10 @@ import { StudentDetailsChildComponent } from './student-details-child/student-de
 import { HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './product/product.component';
 import { CartComponent } from './cart/cart.component';
-
+import { NavbarComponent } from './navbar/navbar.component';
+import { Task11Component } from './task11/task11.component';
+import { Task11contComponent } from './task11cont/task11cont.component';
+import { StudentRegistrationFormComponent } from './student-registration-form/student-registration-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,11 @@ import { CartComponent } from './cart/cart.component';
     StudentListParentComponent,
     StudentDetailsChildComponent,
     ProductComponent,
-    CartComponent
+    CartComponent,
+    NavbarComponent,
+    Task11Component,
+    Task11contComponent,
+    StudentRegistrationFormComponent
   ],
   imports: [
     BrowserModule,
