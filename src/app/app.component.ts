@@ -10,7 +10,7 @@ import { PostService } from './post.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'sample-app';  // Optional
+  title = 'sample-app';
   users: any[] = [];
   searchTerm: string = '';
 

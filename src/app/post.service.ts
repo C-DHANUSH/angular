@@ -6,7 +6,7 @@ import { Observable, catchError, throwError } from 'rxjs';
   providedIn: 'root',
 })
 export class PostService {
-  private apiUrl = 'https://jsonplaceholder.typicode.com/posts';
+  private apiUrl = 'https://api.jsonbin.io/v3/b/686017c68a456b7966b760ca';
 
   constructor(private http: HttpClient) {}
 
